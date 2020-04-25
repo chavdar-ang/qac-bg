@@ -7,7 +7,10 @@ body {
 .container {
     max-width: 1170px;
     margin: 0 auto;
-    background: #fff;
+}
+
+.flex {
+    display: flex;
 }
 
 .split {
@@ -19,6 +22,7 @@ body {
 }
 
 .right {
+    display: flex;
     justify-content: flex-end;
 }
 
@@ -42,8 +46,6 @@ nav {
 
 .nav-link {
     display: inline-block;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
     color: darkslategray;
     &:hover {
         color: #7c69ef;
@@ -57,4 +59,27 @@ nav {
 
 .c2 {
     flex: 2;
+}
+
+.c3 {
+    flex: 3;
+}
+
+// Clients
+.clients {
+    border: 1px solid #f1f4f8;
+    background-color: #f9fbfd;
+    padding-right: 0 1.5rem;
+}
+
+// Blog
+
+.blog {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+
+    .post-item {
+        display: block;
+    }
 }

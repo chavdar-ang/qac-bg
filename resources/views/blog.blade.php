@@ -4,14 +4,19 @@
 
 @section('content')
 
-    <div>
-        <ul>
+<div class="container">
+    <div class="blog">
         @foreach($posts as $post)
-        <li>
-            <a href="{{ route('posts.show', $post->slug) }}">{{ $post->title }}</a>
+        <li class="post-item">
+            <a href="{{ route('posts.show', $post->slug) }}">
+                <img src="https://picsum.photos/400/250?i={{ $post->id }}" alt="{{ $post->title }}">
+            </a>
+            <h3>
+                <a href="{{ route('posts.show', $post->slug) }}">{{ $post->title }}</a>
+            </h3>
         </li>
         @endforeach
-        </ul>
     </div>
-    <p>This is my body content.</p>
+</div>
+
 @endsection

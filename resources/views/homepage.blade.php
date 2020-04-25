@@ -21,11 +21,32 @@
     <section class="services">
         <h2>Services</h2>
     </section>
+</div>
 
-    <section class="clients">
+<section class="clients">
+    <div class="container">
         <h2>Clients</h2>
-    </section>
+        <div class="split">
+            <div class="c1">
+                <img src="/images/actavis.png" alt="Actavis">
+            </div>
+            <div class="c1">
+                <img src="/images/actavis.png" alt="Actavis">
+            </div>
+            <div class="c1">
+                <img src="/images/actavis.png" alt="Actavis">
+            </div>
+            <div class="c1">
+                <img src="/images/actavis.png" alt="Actavis">
+            </div>
+            <div class="c1">
+                <img src="/images/actavis.png" alt="Actavis">
+            </div>
+        </div>
+    </div>
+</section>
 
+<div class="container">
     <section class="contact">
         <h2>Contact</h2>
     </section>
