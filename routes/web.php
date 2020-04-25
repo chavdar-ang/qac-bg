@@ -13,10 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/blog', function () {
-    return view('blog');
-});
+Route::get('/', 'HomepageController@index')->name('home');
+
+// Route::get('/blog', function () {
+//     return view('blog');
+// });
+
+Route::get('blog', 'PostController@index')->name('posts.index');
+Route::get('blog/{slug}', 'PostController@show')->name('posts.show');
