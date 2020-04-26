@@ -1,7 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,400&display=swap');
+
+@import "_grid";
+@import "_blog";
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -9,22 +12,7 @@ body {
     margin: 0 auto;
 }
 
-.flex {
-    display: flex;
-}
 
-.split {
-    display: flex;
-
-    &.align {
-        align-items: center;
-    }
-}
-
-.right {
-    display: flex;
-    justify-content: flex-end;
-}
 
 nav {
     ul {
@@ -53,33 +41,9 @@ nav {
     }
 }
 
-.c1 {
-    flex: 1;
-}
-
-.c2 {
-    flex: 2;
-}
-
-.c3 {
-    flex: 3;
-}
-
 // Clients
 .clients {
     border: 1px solid #f1f4f8;
     background-color: #f9fbfd;
     padding-right: 0 1.5rem;
-}
-
-// Blog
-
-.blog {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1em;
-
-    .post-item {
-        display: block;
-    }
 }

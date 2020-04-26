@@ -1,27 +1,118 @@
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);body {
-  font-family: "Open Sans", sans-serif;
-}
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;
 
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
+0,200;0,300;1,400&display=swap);.split,
 .flex {
   display: flex;
 }
 
-.split {
-  display: flex;
+.align {
+  align-items: center;
 }
 
-.split.align {
-  align-items: center;
+.middle {
+  justify-content: center;
 }
 
 .right {
   display: flex;
   justify-content: flex-end;
+}
+
+.c1 {
+  flex: 1;
+}
+
+.c2 {
+  flex: 2;
+}
+
+.c3 {
+  flex: 3;
+}
+
+.blog {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 1em;
+}
+
+.blog .banner {
+  height: 250px;
+  background-color: darkgray;
+}
+
+.blog .topics {
+  padding-top: 1rem;
+}
+
+.blog .topics a {
+  padding: 0.5rem 0;
+  display: block;
+}
+
+.blog .posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.blog .posts .item {
+  padding-bottom: 2.5rem;
+  display: block;
+}
+
+.blog .posts .item .feature {
+  display: block;
+  width: 100%;
+  height: 174px;
+  background-size: cover;
+}
+
+.blog .posts .meta {
+  font-size: small;
+}
+
+.blog .posts .topics {
+  padding-top: 1rem;
+  font-size: small;
+}
+
+.post-single {
+  padding-top: 8rem;
+  max-width: 740px;
+}
+
+.post-single .meta {
+  font-weight: 100;
+  font-size: 14px;
+  padding: 2rem 0;
+  border-top: 1px solid blanchedalmond;
+  border-bottom: 1px solid blanchedalmond;
+}
+
+.post-single .title {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.post-single .body {
+  padding-top: 1.5rem;
+}
+
+.post-single .topic {
+  display: inline-block;
+  border: 1px solid salmon;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
 nav ul li {
@@ -48,31 +139,9 @@ nav .slogan {
   text-decoration: none;
 }
 
-.c1 {
-  flex: 1;
-}
-
-.c2 {
-  flex: 2;
-}
-
-.c3 {
-  flex: 3;
-}
-
 .clients {
   border: 1px solid #f1f4f8;
   background-color: #f9fbfd;
   padding-right: 0 1.5rem;
-}
-
-.blog {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1em;
-}
-
-.blog .post-item {
-  display: block;
 }
 

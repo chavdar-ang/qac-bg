@@ -4,9 +4,26 @@
 
 @section('content')
 
-    <div>
-        <h1>{{ $post->title }}</h1>
-        <p>{{ $post->body }}</p>
+<div class="container">
+    <div class="flex middle">
+        <section class="post-single">
+            <div class="title">
+                <h1>{{ $post->title }}</h1>
+            </div>
+            <div class="meta">
+                <div>
+                    Публикувано на {{ $post->date }}
+                </div>
+                <div>
+                    Теми:
+                    @foreach($post->topics as $topic)
+                    <a href="{{ route('topics.show', $topic->slug) }}" class="topic">{{ $topic->name }}</a>
+                    @endforeach()
+                </div>
+            </div>
+            <p class="body">{{ $post->body }}</p>
+        </section>
     </div>
-    
+</div>
+
 @endsection

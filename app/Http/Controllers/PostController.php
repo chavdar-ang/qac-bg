@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Post;
+use App\Topic;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -15,7 +16,9 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::with('topics')->get();
-        return view('blog', compact('posts'));
+        $topics = Topic::all();
+
+        return view('blog', compact('posts', 'topics'));
     }
 
     /**
@@ -26,7 +29,8 @@ class PostController extends Controller
      */
     public function show($slug)
     {
-        $post = Post::where('slug', $slug)->first();
-        return view('posts.show', compact('post'));
+        $post = Post::with('topics')->where('slug', $slug)->first();
+        $topics = Topic::all();
+        return view('posts.show', compact('post', 'topics'));
     }
 }
