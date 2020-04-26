@@ -17,7 +17,7 @@
         "laravel/tinker": "^2.0"
     },
     "require-dev": {
-        "backpack/generators": "^2.0",
+        "backpack/generators": "^3.0|4.1.x-dev as 3.0.0",
         "facade/ignition": "^2.0",
         "fzaninotto/faker": "^1.9.1",
         "laracasts/generators": "^1.1",

@@ -11,7 +11,7 @@
                 <h1>{{ $post->title }}</h1>
             </div>
             <div class="meta">
-                <div>
+                <div class="date">
                     Публикувано на {{ $post->date }}
                 </div>
                 <div>
@@ -21,7 +21,7 @@
                     @endforeach()
                 </div>
             </div>
-            <p class="body">{{ $post->body }}</p>
+            <p class="body">{!! $post->body !!}</p>
         </section>
     </div>
 </div>

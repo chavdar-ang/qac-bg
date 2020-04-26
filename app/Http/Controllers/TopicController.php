@@ -29,6 +29,7 @@ class TopicController extends Controller
         $topic = Topic::where('slug', $slug)->first();
 
         $posts = $topic->posts;
-        return view('blog', compact('posts'));
+        $topics = Topic::all();
+        return view('blog', compact('posts', 'topics'));
     }
 }

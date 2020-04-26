@@ -5,6 +5,7 @@ namespace App;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use \Illuminate\Support\Str;
 
 class Post extends Model
 {
@@ -15,7 +16,7 @@ class Post extends Model
      */
     protected $fillable = ['title', 'slug', 'body'];
 
-    protected $appends = ['date'];
+    protected $appends = ['date', 'excerpt'];
 
     public function topics(): BelongsToMany
     {
@@ -25,5 +26,10 @@ class Post extends Model
     public function getDateAttribute()
     {
         return Carbon::parse($this->create_at)->translatedFormat('d F Y');
+    }
+
+    public function getExcerptAttribute()
+    {
+        return Str::words($this->body, 17);
     }
 }
