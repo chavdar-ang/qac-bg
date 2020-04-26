@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCategoriesTable extends Migration
+class CreateTopicsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,29 +14,29 @@ class CreateCategoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('categories', function (Blueprint $table) {
+        Schema::create('topics', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('slug');
             $table->timestamps();
         });
 
-        DB::table('categories')->insert([
+        DB::table('topics')->insert([
             [
-                'name' => 'Web',
-                'slug' => 'web'
+                'name' => 'Quality Management System (QMS)',
+                'slug' => 'quality-management-system'
             ],
             [
-                'name' => 'ISO',
-                'slug' => 'iso'
+                'name' => 'Product Development',
+                'slug' => 'product-development'
             ],
             [
-                'name' => 'CE mark',
-                'slug' => 'ce-mark'
+                'name' => 'Medical Devices',
+                'slug' => 'medical-devices'
             ],
             [
-                'name' => 'EU projects',
-                'slug' => 'eu-projects'
+                'name' => 'QMS Software',
+                'slug' => 'qms-software'
             ]
         ]);
     }
@@ -48,6 +48,6 @@ class CreateCategoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('categories');
+        Schema::dropIfExists('topics');
     }
 }

@@ -1,5 +1,6 @@
 <?php
 
+use App\Topic;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,6 +14,10 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UserSeeder::class);
 
-        factory(App\Post::class, 50)->create();
+        $topics = Topic::all();
+
+        factory(App\Post::class, 50)->create()->each(function ($item) use ($topics) {
+            $item->topics()->attach($topics->random(rand(1,3))->pluck('id'));
+        });
     }
 }

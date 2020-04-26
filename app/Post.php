@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Post extends Model
 {
@@ -12,4 +13,9 @@ class Post extends Model
      * @var array
      */
     protected $fillable = ['title', 'slug', 'body'];
+
+    public function topics(): BelongsToMany
+    {
+        return $this->belongsToMany(Topic::class);
+    }
 }

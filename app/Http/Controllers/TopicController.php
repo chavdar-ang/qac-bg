@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Post;
+use App\Topic;
 use Illuminate\Http\Request;
 
-class PostController extends Controller
+class TopicController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,19 +15,20 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::with('topics')->get();
-        return view('blog', compact('posts'));
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $slug
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($slug)
+    public function show(string $slug)
     {
-        $post = Post::where('slug', $slug)->first();
-        return view('posts.show', compact('post'));
+        $topic = Topic::where('slug', $slug)->first();
+
+        $posts = $topic->posts;
+        return view('blog', compact('posts'));
     }
 }

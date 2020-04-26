@@ -14,6 +14,12 @@
             <h3>
                 <a href="{{ route('posts.show', $post->slug) }}">{{ $post->title }}</a>
             </h3>
+            <div class="meta">{{ Carbon\Carbon::parse($post->created_at)->translatedFormat('d F Y') }}</div>
+            <ul class="topics">
+                @foreach($post->topics as $topic)
+                <li><a href="{{ route('topics.show', $topic->slug) }}">{{ $topic->name }}</a></li>
+                @endforeach
+            </ul>
         </li>
         @endforeach
     </div>

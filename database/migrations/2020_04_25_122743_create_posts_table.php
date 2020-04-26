@@ -15,11 +15,17 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('category_id')->constrained();
             $table->foreignId('image_id')->nullable()->constrained();
             $table->string('title');
             $table->string('slug');
             $table->text('body');
+            $table->timestamps();
+        });
+
+        Schema::create('post_topic', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('post_id')->constrained();
+            $table->foreignId('topic_id')->constrained();
             $table->timestamps();
         });
     }
@@ -31,6 +37,7 @@ class CreatePostsTable extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('post_topic');
         Schema::dropIfExists('posts');
     }
 }
