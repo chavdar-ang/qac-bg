@@ -11,7 +11,7 @@
                 <li><a href="{{ route('posts.index') }}" class="fadein red">Блог</a></li>
                 <li><a href="{{ route('posts.index') }}" class="fadein red">Контакти</a></li>
                 <div class="social">
-                    <a class="fb" href="#">FB</a>
+                    <a class="fb" href="https://www.facebook.com/QACbg/" target="_blank"></a>
                 </div>
             </ul>
         </nav>    
