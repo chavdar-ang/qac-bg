@@ -9,19 +9,17 @@
 </head>
 
 <body>
-    <div>
-        <header>
-            @include('includes.navbar')
-        </header>
+    <header>
+        @include('includes.navbar')
+    </header>
 
-        <main>
-            @yield('content')
-        </main>
+    <main>
+        @yield('content')
+    </main>
 
-        <footer>
-            @include('includes.footer')
-        </footer>
-    </div>
+    <footer>
+        @include('includes.footer')
+    </footer>
 </body>
 
 </html>

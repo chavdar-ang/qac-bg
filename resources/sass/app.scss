@@ -3,44 +3,99 @@
 
 @import "_grid";
 @import "_blog";
+@import "_fluid";
+@import "_header";
+@import "_hb";
+@import "_index";
+@import "_form";
+
+html {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+}
 
 body {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
     font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
 }
 
-.container {
-    max-width: 1170px;
-    margin: 0 auto;
+main { 
+    display: block; 
+    overflow: hidden; 
+}
+img {
+    border: none;
+    outline: none;
+    line-height: 0;
+    vertical-align: middle; 
+    max-width: 100%;
+}
+
+a {
+    color: #555;
+    outline: 0; 
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    text-decoration: none;
+} 
+
+*:focus { outline: 0; }
+
+.cf:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+ul li { list-style: none;}
+
+:root {
+    --h4-font-size:25px;
+    --h3-font-size: 30px;
+    --h2-font-size: 35px;
+    --h1-font-size: 40px;
+    --h1-text-transform: uppercase;
+    --h3-text-transform: uppercase;
+}
+
+// nav {
+//     ul {
+//         li {
+//             display: inline-block;
+//             padding-right: 1.5rem;
+//             padding-left: 1.5rem;
+//         }
+//     }
+// }
+
+section a.logo img {
+    width: 100px;
+    margin: 10px 0;
+}
+
+@media all and (min-width: 961px) {
+    section a.logo {
+        display: flex;
+        align-items: center;
+    } 
+
+    section a.logo img { padding: 0 20px 0 0 ;}
+}
+
+@media all and (max-width: 960px) {
+    section a.logo img {padding: 0 15px 0 20px;}
 }
 
 
 
-nav {
-    ul {
-        li {
-            display: inline-block;
-            padding-right: 1.5rem;
-            padding-left: 1.5rem;
-        }
-    }
-
-    .logo {
-        width: 100px;
-    }
-
-    .slogan {
-        padding-left: 1.5rem;
-    }
-}
-
-.nav-link {
-    display: inline-block;
-    color: darkslategray;
-    &:hover {
-        color: #7c69ef;
-        text-decoration: none;
-    }
-}
 
 // Clients
 .clients {

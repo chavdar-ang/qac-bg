@@ -1,0 +1,47 @@
+@media all and (max-width: 960px) {
+    nav { display: none; }
+    .hb {
+        display: block;
+        width: 30px;
+        height: 30px;
+        padding: 15px;
+        cursor: pointer;
+        position: relative;
+    }
+
+
+    .hb hr {
+        border: none;
+        margin: 0;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: #000;
+        transition: all .25s ease;
+    }
+
+    .hb hr { top: 29px; }
+
+    .hb hr:first-child { top: 21px; }
+
+    .hb hr:last-child { top: 37px; }
+
+    .hb.show hr:first-child,
+    .hb.show hr:last-child {
+        width: 0;
+        top: 15px;
+        margin: 15px;
+        opacity: 0;
+    }
+
+    .hb.show hr:nth-child(2) { transform: rotate(45deg); }
+
+    .hb.show hr:nth-child(3) { transform: rotate(-45deg); }
+}
+
+@media all and (min-width: 961px) {
+    .hb { display: none; }
+    header nav.show {
+        display: block;
+    }
+}

@@ -1,0 +1,110 @@
+header nav a.red {
+	display:inline-block;
+	text-decoration:none;
+	color:rgba(0,0,0,.5);
+	font-size:16px;
+	padding: 5px 15px;
+	margin-right: 5px;
+	transition: color 0.3s ease-in;
+}
+
+header nav a.red:hover { 
+	color: #db0546;
+	transition: color 0.3s ease-in;
+}
+
+@media all and (max-width: 960px) {
+
+    nav {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    nav.show {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+    }
+}
+
+@media all and (min-width: 961px) {
+
+    header .flex-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+	
+	nav a.fadein{ opacity: 1; }
+
+	@keyframes navOpacity {
+		0% {
+		opacity: 0;
+		}
+		100% {
+		opacity: 1;
+		}
+	}
+
+	nav a.fadein{
+		animation: 2s ease-out 0s 1 navOpacity;
+	}
+
+
+    nav a {
+        display: inline-block;
+        color: #333;
+        text-decoration: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+nav .social a {
+	border: 1px solid #db0546;
+	border-radius: 20px;
+    background-size: 12px;
+    display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 3px;
+}
+
+// nav a.fb { background-image: url(../svg/facebook.svg);}
+
+.social a {
+    background-position: center;
+	background-repeat: no-repeat;
+}
+
+@media all and (min-width:961px) {
+	a.logo { 
+		display: flex;
+		align-items: center;
+	}
+}
+
+@media all and (max-width:960px) {
+	a.logo p { 
+		display: none
+	}
+}
+
+@media all and (max-width: 1280px){
+	nav { margin-right: 10px;}
+}
+
+@media all and (max-width: 939px) {
+	nav ul {display: block;}
+	nav { text-align: center;}
+}
