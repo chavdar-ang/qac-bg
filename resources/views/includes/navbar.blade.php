@@ -8,8 +8,8 @@
             <ul>
                 <li><a href="{{ route('posts.index') }}" class="fadein red">За нас</a></li>
                 <li><a href="{{ route('posts.index') }}" class="fadein red">Услуги</a></li>
-                <li><a href="{{ route('posts.index') }}" class="fadein red">Блог</a></li>
-                <li><a href="{{ route('posts.index') }}" class="fadein red">Контакти</a></li>
+                <!-- <li><a href="{{ route('posts.index') }}" class="fadein red">Блог</a></li> -->
+                <li><a href="{{ route('contacts.show') }}" class="fadein red">Контакти</a></li>
                 <div class="social">
                     <a class="fb" href="https://www.facebook.com/QACbg/" target="_blank"></a>
                 </div>

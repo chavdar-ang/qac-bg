@@ -1,0 +1,50 @@
+.bg-contacts {
+    background-image: url(/images/inquiry.jpg),linear-gradient(180deg,rgba(0,0,0,.5) 0,rgba(0,0,0,.3) 40%,
+    rgba(0,0,0,.75));
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+
+}
+.bg-contacts h1 {
+    color:  #fff;
+    text-align: center;
+    padding: 120px;
+    margin: 0;
+    font-size: 60px;
+}
+
+section.form { padding: 40px 0;}
+
+@media all and (min-width: 481px) {
+	.flexx {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 0;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.flexx {
+		display: block;
+		text-align: center;
+		line-height: 60px;
+	}
+}
+
+.form- control {
+    display: block;
+    width: 100%;
+    height: calc(1.6em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}

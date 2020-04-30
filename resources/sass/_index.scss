@@ -100,6 +100,12 @@ h1 { font-size:  var(--h1-font-size); }
 
 }
 
+
+.services .index-icon a:hover {
+    color: #1d68a7;
+    text-decoration: underline;
+}
+
 .services p { padding-left: 10px;}
 
 .services button { margin-left: 10px;}
@@ -166,6 +172,7 @@ h1 { font-size:  var(--h1-font-size); }
 .suggestions-title { 
     text-align: center;
     margin-top: 40px ;
+    padding: 0 20px;
 }
 
 
@@ -239,6 +246,10 @@ h1 { font-size:  var(--h1-font-size); }
     font-size: var(--h3-font-size);
 }
 
+@media all and ( max-width:480px) {
+    .us {padding: 20px;}
+}
+
 // US-end //
 
 // QAC-CE-MARK //
@@ -284,8 +295,11 @@ h1 { font-size:  var(--h1-font-size); }
     .qas-gradient .row .stars { display: none;}
 }
 
-
 ul { padding-left: 25px;}
+
+@media all and (max-width:480px) {
+    .qas-gradient { padding: 20px;}
+}
 
 // QAC-CE-MARK //
 
