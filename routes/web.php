@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::post('submit', function () {
+//     dd(request()->all());
+// });
+
+Route::post('submit', 'ContactFormController@store')->name('contacts.store');
 
 Route::get('/', 'HomepageController@index')->name('home');
 

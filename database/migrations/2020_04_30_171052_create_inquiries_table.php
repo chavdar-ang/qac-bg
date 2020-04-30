@@ -16,7 +16,7 @@ class CreateInquiriesTable extends Migration
         Schema::create('inquiries', function (Blueprint $table) {
             $table->id();
             $table->foreignId('type_id')->constrained('inquiry_types');
-            $table->string('contact_person');
+            $table->string('name');
             $table->string('company')->nullable();
             $table->string('phone');
             $table->string('email');

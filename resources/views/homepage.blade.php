@@ -23,7 +23,7 @@
 <h1 class="services-title">Нашите услуги</h1>
 <hr class="hr-line">
 
-<div class="services">
+<div class="services" id="services">
     <section class="grid">
         <div class="index-icon ce">
             <h2>Подготовка за продуктова сертификация</h2>
@@ -55,8 +55,7 @@
             <p>Какви са изискванията НАТО към производителите и доставяните изделия за отбраната и как да ги изпълните? </p>
             <br />
             <br />
-            <button type="submit">Свържи се с нас</button>
-
+            <a href="{{ route('contacts.show') }}" class="red submit">Свържи се с нас</a>
         </div>
     </section>
 </div>
