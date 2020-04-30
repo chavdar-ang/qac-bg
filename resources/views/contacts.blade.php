@@ -25,10 +25,9 @@
                     <legend class="required">Отностно</legend>
                     <select name="subject" id="form-subject" class="form-control" required="">
                         <option value="" selected="" disabled="" hidden="">Изберете...</option>
-                        <option value="1">Внедряване на система за управление</option>
-                        <option value="2">Изпълнение на изисквания на НАТО</option>
-                        <option value="3">Продуктово съответствие и СЕ маркировка</option>
-                        <option value="4">Други интереси</option>
+                        @foreach($subjects as $subject)
+                        <option value="{{ $subject->id }}">{{ $subject->title }}</option>
+                        @endforeach
                     </select>
 
                     <legend class="required">Съобщение:</legend>
