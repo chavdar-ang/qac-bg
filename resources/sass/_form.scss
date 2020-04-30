@@ -87,9 +87,10 @@ label.checkbox, label.radiocheck {
     padding: 5px 20px 5px 30px;
 }
 
-button[type="submit"] {
+button[type="submit"],
+a.submit {
     cursor: pointer;
-    color: #fff;
+    color: #fff !important;
     background-color: #db0546;
     display: inline-block;
     font-weight: 400;

@@ -5,14 +5,13 @@
         <div class="hb"><hr><hr><hr><hr></div>
         <div style="clear: both;"></div>
         <nav>
-            <ul>
-                <li><a href="{{ route('posts.index') }}" class="fadein red">За нас</a></li>
-                <li><a href="{{ route('posts.index') }}" class="fadein red">Услуги</a></li>
-                <!-- <li><a href="{{ route('posts.index') }}" class="fadein red">Блог</a></li> -->
-                <li><a href="{{ route('contacts.show') }}" class="fadein red">Контакти</a></li>
-                <div class="social">
-                    <a class="fb" href="https://www.facebook.com/QACbg/" target="_blank"></a>
-                </div>
-            </ul>
+            <a href="/" class="fadein red">Начало</a>
+            <a href="{{ route('posts.index') }}" class="fadein red">За нас</a>
+            <a href="{{ route('posts.index') }}" class="fadein red">Услуги</a>
+            <!-- <a href="{{ route('posts.index') }}" class="fadein red">Блог</a> -->
+            <a href="{{ route('contacts.show') }}" class="fadein red submit">Контакти</a>
+            <div class="social">
+                <a class="fb" href="https://www.facebook.com/QACbg/" target="_blank"></a>
+            </div>
         </nav>    
     </section>

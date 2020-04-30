@@ -221,7 +221,7 @@ section {
   align-items: center;
 }
 
-@media all and (min-width: 940px) {
+@media all and (min-width: 961px) {
   .w35 {
     width: 35%;
   }
@@ -231,7 +231,7 @@ section {
   }
 }
 
-@media all and (max-width: 939px) {
+@media all and (max-width: 960px) {
   .c2 {
     width: 100%;
   }
@@ -250,6 +250,10 @@ section {
 
   .w15 {
     width: 30%;
+  }
+
+  .p024 {
+    padding: 20px;
   }
 }
 
@@ -351,7 +355,7 @@ header nav a.red:hover {
     text-decoration: none;
   }
 
-  nav ul {
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -396,9 +400,15 @@ nav a.fb {
   }
 }
 
-@media all and (max-width: 939px) {
-  nav ul {
+@media all and (max-width: 960px) {
+  nav {
     display: block;
+    padding: 0;
+  }
+
+  nav .social a {
+    width: 15px;
+    height: 15px;
   }
 
   nav {
@@ -412,12 +422,14 @@ nav a.fb {
   }
 
   .hb {
+    float: right;
     display: block;
     width: 30px;
     height: 30px;
     padding: 15px;
     cursor: pointer;
     position: relative;
+    margin-top: 10px;
   }
 
   .hb hr {
@@ -904,9 +916,10 @@ label.radiocheck {
   padding: 5px 20px 5px 30px;
 }
 
-button[type=submit] {
+button[type=submit],
+a.submit {
   cursor: pointer;
-  color: #fff;
+  color: #fff !important;
   background-color: #db0546;
   display: inline-block;
   font-weight: 400;
@@ -1014,6 +1027,22 @@ section.form {
   padding: 40px 0;
 }
 
+.google-maps {
+  position: relative;
+  padding-bottom: 72%;
+  height: 0;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 @media all and (min-width: 481px) {
   .flexx {
     display: flex;
@@ -1028,6 +1057,10 @@ section.form {
     display: block;
     text-align: center;
     line-height: 60px;
+  }
+
+  .bg-contacts h1 {
+    padding: 40px;
   }
 }
 
@@ -1140,7 +1173,7 @@ section a.logo img {
   }
 }
 
-@media all and (max-width: 960px) {
+@media all and (max-width: 1300px) {
   section a.logo img {
     padding: 0 15px 0 20px;
   }

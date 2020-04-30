@@ -16,6 +16,22 @@
 
 section.form { padding: 40px 0;}
 
+.google-maps {
+    position: relative;
+    padding-bottom: 72%;
+    height: 0;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
 @media all and (min-width: 481px) {
 	.flexx {
 		display: flex;
@@ -30,7 +46,10 @@ section.form { padding: 40px 0;}
 		display: block;
 		text-align: center;
 		line-height: 60px;
-	}
+    }
+    
+    .bg-contacts h1  { padding: 40px;}
+
 }
 
 .form- control {

@@ -1,12 +1,14 @@
 @media all and (max-width: 960px) {
     nav { display: none; }
     .hb {
+        float: right;
         display: block;
         width: 30px;
         height: 30px;
         padding: 15px;
         cursor: pointer;
         position: relative;
+        margin-top: 10px;
     }
 
 

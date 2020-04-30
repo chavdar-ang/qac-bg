@@ -37,18 +37,19 @@ section {
     align-items: center;
 }
 
-@media all and (min-width: 940px){
+@media all and (min-width: 961px){
 
     .w35 { width: 35%; }
     .w15 { width: 15%; }
 }
 
-@media all and (max-width: 939px) {
+@media all and (max-width: 960px) {
     .c2 { width: 100%; }
     .c32 { width: 50%; }
     .c43 { width: 33.333333333%; }
     .w35 { width: 70%;}
     .w15 { width: 30%; }
+    .p024 { padding: 20px;}
 }
 
 @media all and (max-width: 800px) {
