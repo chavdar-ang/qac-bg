@@ -107,6 +107,10 @@ a.submit-border:hover {
     color: #212529;
 }
 
+@media all and (max-width: 447px) {
+    a.submit-border { margin-top: 15px;}
+}
+
 button[type="submit"],
 a.submit,
 a.submit-border {
@@ -119,7 +123,7 @@ a.submit-border {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    padding: .5rem 1rem;
+    padding: 5px 20px;;
     /* margin-top: 10px; */
     font-size: 1.125rem;
     line-height: 1.5;
