@@ -301,6 +301,19 @@ ul { padding-left: 25px;}
     .qas-gradient { padding: 20px;}
 }
 
+.message {
+    display: none;
+    padding: 20px;
+    color: white;
+    &.success {
+        background-color: #35bd35;
+    }
+    &.danger {
+        background-color: #db0646;
+    }
+    border-radius: 5px;
+}
+
 // QAC-CE-MARK //
 
 

@@ -14,7 +14,6 @@
             <fieldset>
                 <div class="w100">
                     <legend class="required">Име:</legend>
-
                     <input type="text" name="name" id="name" data-msg="Въведете име" data-reg="^.{3,255}$">
 
                     <legend class="required">Телефон:</legend>
@@ -22,6 +21,9 @@
 
                     <legend class="required">Е-mail:</legend>
                     <input type="text" name="email" id="email" data-msg="Въведете валиден email" data-reg="^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-\.]+[a-zA-Z\.]{2,7}$">
+
+                    <legend>Фирма:</legend>
+                    <input type="text" name="company" id="company" data-msg="Въведете фирма" data-reg="^.{3,255}$">
 
                     <legend class="required">Отностно</legend>
                     <select name="subject" id="subject" class="form-control" required="">
@@ -36,8 +38,9 @@
                 </div>
 
                 <div class="flexx">
-                    <label class="checkbox"><input type="checkbox" name="IAgree" value="1" data-reg=":checked" data-msg="За да продължите трябва да приемете условията на сайта!"><span></span> Съгласен съм с <a href="/bg/общи-условия.html" target="_blank">условията на сайта.</a></label>
                     <button type="submit">Изпрати</button>
+                </div>
+                <div class="message">
                 </div>
             </fieldset>
         </form>
@@ -58,6 +61,7 @@
         name = $('#name').val();
         email = $('#email').val();
         phone = $('#phone').val();
+        company = $('#company').val();
         subject = $('#subject').val();
         body = $('#body').val();
 
@@ -72,9 +76,14 @@
                 subject: subject,
                 body: body,
             },
-            success: function(response) {
-                console.log(response);
-            },
+            success: function(responce) {
+                $('.message').text(responce.message)
+                if (responce.status == 'success') {
+                    $('.message').removeClass('danger').addClass('success').show()
+                } else {
+                    $('.message').removeClass('success').addClass('danger').show()
+                }
+            }
         });
     });
 </script>
