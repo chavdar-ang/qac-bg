@@ -561,7 +561,8 @@ h1 {
   text-align: center;
 }
 
-.services .index-icon.iso a:hover {
+.services .index-icon.iso a:hover,
+.services .index-icon.ce a:hover {
   color: #1d68a7;
   text-decoration: underline;
 }
@@ -1132,7 +1133,7 @@ img {
 }
 
 a {
-  color: #555;
+  color: #000;
   outline: 0;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   text-decoration: none;

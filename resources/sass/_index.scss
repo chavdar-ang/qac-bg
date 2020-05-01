@@ -80,7 +80,8 @@ h1 { font-size:  var(--h1-font-size); }
 }
 
 
-.services .index-icon.iso a:hover {
+.services .index-icon.iso a:hover,
+.services .index-icon.ce a:hover {
     color: #1d68a7;
     text-decoration: underline;
 }
