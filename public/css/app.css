@@ -284,10 +284,11 @@ header nav a.red {
   display: inline-block;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
+  font-size: 14px;
   padding: 5px 15px;
   margin-right: 5px;
   transition: color 0.3s ease-in;
+  text-transform: uppercase;
 }
 
 header nav a.red:hover {
@@ -505,23 +506,6 @@ h1 {
   font-size: 1.125rem;
 }
 
-.width-center a {
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  line-height: 25px;
-  text-decoration: none;
-  padding: 5px 20px;
-  display: inline-block;
-  color: #fff;
-  background-color: #db0546;
-  border-radius: 3px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.5s ease, border 0.5s ease;
-  -webkit-appearance: none;
-}
-
 .line {
   display: inline-block;
   border-bottom: 2px solid #fff;
@@ -582,7 +566,7 @@ h1 {
   text-align: center;
 }
 
-.services .index-icon a:hover {
+.services .index-icon.iso a:hover {
   color: #1d68a7;
   text-decoration: underline;
 }
@@ -904,6 +888,7 @@ label.checkbox span {
 }
 
 label.checkbox input:checked + span {
+  background-image: url(/svg/check.svg);
   background-color: #db0546;
   background-position: center;
 }
@@ -933,9 +918,30 @@ label.radiocheck {
 
 button[type=submit],
 a.submit {
-  cursor: pointer;
   color: #fff !important;
   background-color: #db0546;
+  border: 1px solid transparent;
+}
+
+button[type=submit]:hover,
+a.submit:hover {
+  background-color: #a90436;
+}
+
+a.submit-border {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+a.submit-border:hover {
+  background-color: #fff;
+  color: #212529;
+}
+
+button[type=submit],
+a.submit,
+a.submit-border {
+  cursor: pointer;
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -949,7 +955,6 @@ a.submit {
   font-size: 1.125rem;
   line-height: 1.5;
   border-radius: 0.3rem;
-  border: 1px solid transparent;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 

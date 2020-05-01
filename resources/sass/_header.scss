@@ -2,10 +2,11 @@ header nav a.red {
 	display:inline-block;
 	text-decoration:none;
 	color:rgba(0,0,0,.5);
-	font-size:16px;
+	font-size:14px;
 	padding: 5px 15px;
 	margin-right: 5px;
 	transition: color 0.3s ease-in;
+	text-transform: uppercase;
 }
 
 header nav a.red:hover { 
