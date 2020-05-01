@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Inquiry;
 use Exception;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Http\Request;
 
 class ContactFormController extends Controller
@@ -24,6 +23,7 @@ class ContactFormController extends Controller
             'name' => 'required|string|max:128',
             'body' => 'required|string',
             'phone' => 'required|string',
+            'company' => 'string',
             'email' => 'required|email',
             'subject' => 'required|integer'
         ]);
