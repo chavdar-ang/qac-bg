@@ -62,7 +62,7 @@ label.checkbox span {
 }
 
 label.checkbox input:checked + span {
-    // background-image: url(../svg/check.svg);
+    background-image: url(/svg/check.svg);
     background-color: 
     #db0546;
     background-position: center;
@@ -89,9 +89,28 @@ label.checkbox, label.radiocheck {
 
 button[type="submit"],
 a.submit {
-    cursor: pointer;
     color: #fff !important;
     background-color: #db0546;
+    border: 1px solid   transparent;
+}
+
+button[type="submit"]:hover,
+a.submit:hover {background-color: #a90436;}
+
+a.submit-border {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+a.submit-border:hover {
+    background-color: #fff;
+    color: #212529;
+}
+
+button[type="submit"],
+a.submit,
+a.submit-border {
+    cursor: pointer;
     display: inline-block;
     font-weight: 400;
     text-align: center;
@@ -105,6 +124,5 @@ a.submit {
     font-size: 1.125rem;
     line-height: 1.5;
     border-radius: .3rem;
-    border: 1px solid   transparent;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }

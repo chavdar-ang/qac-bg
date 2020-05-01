@@ -20,26 +20,26 @@ h1 { font-size:  var(--h1-font-size); }
 
 .width-center p { font-size: 1.125rem;}
 
-.width-center a {
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    line-height: 25px;
-    text-decoration: none;
-    padding: 5px 20px;
-    display: inline-block;
-    color: #fff;
-    background-color: #db0546;
-    border-radius: 3px;
-    border: none;
-    cursor: pointer;
-    -webkit-transition: background-color 0.5s ease, border 0.5s ease;
-    -moz-transition: background-color 0.5s ease, border 0.5s ease;
-    -ms-transition: background-color 0.5s ease, border 0.5s ease;
-    -o-transition: background-color 0.5s ease, border 0.5s ease;
-    transition: background-color 0.5s ease, border 0.5s ease;
-    -webkit-appearance: none;
-}
+// .width-center a {
+//     text-transform: uppercase;
+//     font-family: 'Montserrat', sans-serif;
+//     font-size: 14px;
+//     line-height: 25px;
+//     text-decoration: none;
+//     padding: 5px 20px;
+//     display: inline-block;
+//     color: #fff;
+//     background-color: #db0546;
+//     border-radius: 3px;
+//     border: none;
+//     cursor: pointer;
+//     -webkit-transition: background-color 0.5s ease, border 0.5s ease;
+//     -moz-transition: background-color 0.5s ease, border 0.5s ease;
+//     -ms-transition: background-color 0.5s ease, border 0.5s ease;
+//     -o-transition: background-color 0.5s ease, border 0.5s ease;
+//     transition: background-color 0.5s ease, border 0.5s ease;
+//     -webkit-appearance: none;
+// }
 
 .line {
     display: inline-block;
@@ -101,7 +101,7 @@ h1 { font-size:  var(--h1-font-size); }
 }
 
 
-.services .index-icon a:hover {
+.services .index-icon.iso a:hover {
     color: #1d68a7;
     text-decoration: underline;
 }
