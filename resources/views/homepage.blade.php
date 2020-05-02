@@ -22,7 +22,6 @@
 
 <!-- services -->
 <h1 class="services-title">Нашите услуги</h1>
-<hr class="hr-line">
 
 <div class="services" id="services">
     <section class="grid">
@@ -57,7 +56,6 @@
 
 <!-- suggestion -->
 <h1 class="suggestions-title">За да успее бизнесът Ви предлагаме</h1>
-<hr class="hr-line">
 
 <div class="fixed">
     <section class="container-fixed">
@@ -83,7 +81,6 @@
 <!-- US -->
 <section class="us">
     <h1>Защо да работите с нас?</h1>
-    <hr class="hr-line">
     <p>Всички проекти по внедряване на системи за управление, подготовка за сертификация на продукти и обучения, изпълнявани от "Кю Ей Си" ООД се реализират в условията на изградена и сертифицирана система за управление на качеството. </p>
 </section>
 <!-- US-end -->
@@ -115,7 +112,6 @@
 <!-- PARTNERS -->   
     <div class="partners">
         <h1>Фирмите, които ни се довериха</h1>
-        <hr class="hr-line">
         <div class="c4 p2">
             <img src="/images/parners/actavis.png" alt="">
         </div><div class="c4 p2">
