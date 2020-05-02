@@ -30,7 +30,13 @@ class CreateUsersTable extends Migration
                 'name' => 'Chavdar Angelov',
                 'email' => 'chavdar84@gmail.com',
                 'email_verified_at' => now(),
-                'password' => Hash::make('zxczxczxc')
+                'password' => Hash::make('password')
+            ],
+            [
+                'name' => 'Peter Petrov',
+                'email' => 'petar.emilov.petrov@gmail.com',
+                'email_verified_at' => now(),
+                'password' => Hash::make('password')
             ],
         ]);
     }
