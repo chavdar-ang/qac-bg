@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/app.css?v=2">
+    <script src="/js/app.js?v=2"></script>
     <title>App Name - @yield('title')</title>
 </head>
 
