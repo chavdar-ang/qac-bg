@@ -32,30 +32,32 @@ h1 { font-size:  var(--h1-font-size); }
 
 @media all and (min-width:981px) {
     .text {margin-top: 100px;}
+    
+    .width-center .cert {text-align: right;}
+}
+
+@media all and (max-width:1080px) {
+    .text,.cert { padding: 20px; }
 }
 
 @media all and (max-width:980px) {
-    .text {margin-top: 0;}
+    .text {
+        margin-top: 0;
+        padding: 20px;
+    }
 
-    .slider { text-align: center;}
+
+    .width-center .cert {text-align: center;}
 
     .width-center .cert {padding: 20px;}
 }
 
-
-
 .text h1 {
     font-size:  var(--h1-font-size);
     margin: 16px 0;
+    line-height: 45px;
 }
 
-.hr-line {
-    width: 100px;
-    height: 3px;
-    background-color:   #db0546;
-    border: none;
-    margin-bottom: 27px;
-}
 
 // main-title-end //
 
@@ -69,8 +71,7 @@ h1 { font-size:  var(--h1-font-size); }
 
 .services { 
     background-color: #EEE;
-    padding: 40px;
-    // clip-path: polygon(50% 0%, 100% 6%, 100% 100%, 0 100%, 0 5%);
+    padding:80px 0 40px 0;
 }
 
 .services .index-icon h2 { 
@@ -80,50 +81,24 @@ h1 { font-size:  var(--h1-font-size); }
 }
 
 
-.services .index-icon.iso a:hover,
-.services .index-icon.ce a:hover {
-    color: #1d68a7;
-    text-decoration: underline;
-}
-
-.services p { padding-left: 10px;}
-
-.services button { margin-left: 10px;}
-
-.services .index-icon.ce { background-image: url(/images/ce-mark-home.png);}
-.services .index-icon.iso { background-image: url(/images/iso-home.png);}
-
-
-
 .services section.grid .index-icon {
-    margin: 10px;
+    margin:0 20px 10px;
     border-bottom: 2px solid#FFF;
     background-color:#FFF;
     box-shadow: 0 2px 8px 0    rgba(0,0,0,0.32);
-    padding: 80px 15px 20px;
-    background-position: center 25px;
-    background-repeat: no-repeat;
-    filter: grayscale(100%);
+    padding:0 20px 30px 20px;
+    text-align: center;
 }
 
-.animate {opacity: 0;}
-
-.fadeInUp {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
+.services section.grid .index-icon .icon {
+    border-radius: 50px;
+    border: 1px solid #EEE;
+    padding: 15px;
+    margin:-50px 20px 20px;
+    background-color: #FFF;
+    width: 70px;
+    height: 70px;
 }
-
-.services section.grid .index-icon:hover {filter: none;}
-
-.services ul { text-align: left;}
-
-.services ul li {  
-    display: flex;
-    margin-bottom: 18px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
 
 .services section.grid {
     display: grid;
@@ -133,16 +108,30 @@ h1 { font-size:  var(--h1-font-size); }
     grid-template-columns: repeat(2,1fr);
 }
 
-@media all and (max-width: 940px) {
-    .services section.grid { grid-template-columns: repeat(2,1fr);}
-    .services { padding: 20px;}
+@media all and (max-width:1080px) {
+    .services { padding:80px 20px 40px 20px; }
+}
+
+@media all and ( min-width: 981px) {
+    .services section.grid .index-icon.ce { margin:0 20px 0 0; }
+    .services section.grid .index-icon.iso { margin:0 0 0 20px; }
+}
+
+@media all and (max-width: 980px) {
+    .services section.grid { grid-template-columns: 1fr;}
+    .services { padding:90px 20px 40px 20px;}
+
+    .services section.grid .index-icon { 
+        padding:0 10px 30px 10px; 
+        margin:0 10px 10px;
+    }
+
+    .services section.grid .index-icon.ce { margin-bottom: 80px;}
 }
 
 @media all and (max-width: 640px) {
-    .services section.grid {
-        grid-template-columns: 1fr;
-    }
-    .services {padding: 10px;}
+
+    .services {padding:90px 10px 40px 10px;}
 }
 // services-end // 
 
@@ -235,7 +224,7 @@ h1 { font-size:  var(--h1-font-size); }
     
 .qas-gradient {
     background: linear-gradient(90deg,#294e95,#517dbc);
-    padding:40px;
+    padding:50px;
     color: #FFF;
 }
 
@@ -258,6 +247,13 @@ h1 { font-size:  var(--h1-font-size); }
     font-size:  var(--h1-font-size);
     text-transform:  var(--h1-text-transform);
 }
+
+ul { padding-left: 25px;}
+
+@media all and (max-width: 1080px){
+    .qas-gradient { padding: 50px 20px;}
+}
+
 @media all and (min-width:981px) {
     .qas-gradient .row .CE-content {
         flex: 0 0 75%;
@@ -272,12 +268,6 @@ h1 { font-size:  var(--h1-font-size); }
 
 @media all and (max-width:980px) {
     .qas-gradient .row .stars { display: none;}
-}
-
-ul { padding-left: 25px;}
-
-@media all and (max-width:480px) {
-    .qas-gradient { padding: 20px;}
 }
 
 .message {

@@ -10,6 +10,7 @@
 @import "_form";
 @import "_footer";
 @import "contacts";
+@import "about";
 
 html {
     height: 100%; 
@@ -26,6 +27,7 @@ body {
     overflow-y: scroll;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    line-height: 1.375rem;
 }
 
 main { 
@@ -67,7 +69,7 @@ a {
 }
 
 h1,h2,h3,h4 {
-    font-weight: 300;
+    font-weight: 600;
 }
 
 ul li { list-style: none;}
