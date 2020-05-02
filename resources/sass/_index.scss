@@ -92,7 +92,6 @@ h1 { font-size:  var(--h1-font-size); }
 
 .services .index-icon.ce { background-image: url(/images/ce-mark-home.png);}
 .services .index-icon.iso { background-image: url(/images/iso-home.png);}
-.services .index-icon.aqap { background-image: url(/images/aqap-home.png);}
 
 
 
@@ -131,7 +130,7 @@ h1 { font-size:  var(--h1-font-size); }
 
 }
 .services section.grid {
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
 }
 
 @media all and (max-width: 940px) {

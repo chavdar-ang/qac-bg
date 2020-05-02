@@ -6,7 +6,7 @@
         <div style="clear: both;"></div>
         <nav>
             <a href="/" class="fadein red">Начало</a>
-            <!-- <a href="{{ route('posts.index') }}" class="fadein red">За нас</a> -->
+            <a href="{{ route('posts.index') }}" class="fadein red">За нас</a>
             <a href="#services" class="fadein red">Услуги</a>
             <!-- <a href="{{ route('posts.index') }}" class="fadein red">Блог</a> -->
             <a href="{{ route('contacts.show') }}" class="fadein submit">Контакти</a>
