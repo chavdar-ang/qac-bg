@@ -10,7 +10,7 @@ h1.suggestions-title::after,
     height: 1px;
     background-color: #db0546;
     border: none;
-    margin: 25px auto;
+    margin:15px auto 25px auto;
 }
 
 
@@ -67,7 +67,6 @@ h1.suggestions-title::after,
 .text h1 {
     font-size:  var(--h1-font-size);
     margin: 16px 0;
-    line-height: 45px;
 }
 
 
@@ -304,6 +303,10 @@ ul { padding-left: 25px;}
 .partners { 
     text-align: center;
     padding: 40px;
+}
+
+@media all and ( max-width: 980px) {
+    .partners { padding: 40px 20px;}
 }
 
 // partners //
