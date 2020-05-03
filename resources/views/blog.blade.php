@@ -7,7 +7,7 @@
 <div class="container">
     <div class="blog">
         <div class="posts">
-            @foreach($posts as $post)
+            @forelse($posts as $post)
             <li class="item">
                 <a href="{{ route('posts.show', $post->slug) }}" class="feature" style="background-image: url('https://picsum.photos/400/250?i={{ $post->id }}')" alt="{{ $post->title }}">
                 </a>
@@ -22,16 +22,20 @@
                     @endforeach
                 </div>
             </li>
-            @endforeach
+            @empty
+            <p>Няма налични публикации</p>
+            @endforelse
         </div>
         <div class="sidebar">
             <div class="banner">
                 banner
             </div>
             <div class="topics">
-            @foreach($topics as $item)
-            <a href="{{ route('topics.show', $topic->slug) }}">{{ $item->name }}</a>
-            @endforeach
+                @forelse($topics as $topic)
+                <a href="{{ route('topics.show', $topic->slug) }}">{{ $topic->name }}</a>
+                @empty
+                <p>Няма налични теми</p>
+                @endforelse
             </div>
         </div>
     </div>
