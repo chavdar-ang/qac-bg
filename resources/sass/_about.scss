@@ -1,0 +1,25 @@
+.about {
+    padding: 20px;
+    text-align: center;
+}
+
+.about h1 { margin-bottom: 0;}
+
+.about h1::after {
+    content: ' ';
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: #db0546;
+    border: none;
+    margin: 15px auto 25px auto;
+}
+
+.content {
+    padding: 10px;
+}
+
+.content p {
+    max-width: 750px;
+    margin: 10px auto;
+}
