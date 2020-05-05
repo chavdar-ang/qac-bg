@@ -9,10 +9,10 @@
     <div class="width-center">
         <div class="text c2">
             <h1>Подкрепяме бизнеса по пътя към успешната сертификация</h1>
-            <div class="line"></div>
+            <!-- <div class="line"></div> -->
             <p>Над 23 години помагаме на бизнеса като му осигуряваме достъп до европейския пазар.</p>
             <br />
-            <a class="submit" href="{{ route('contacts.show') }}">направи запитване</a>
+            <a class="submit" href="{{ route('contacts.show') }}"> запитване</a>
         </div><div class="cert c2 ">
             <img src="/images/cert.jpg" alt="">
         </div>
