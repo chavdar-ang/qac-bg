@@ -23,6 +23,7 @@
 
         gtag('config', 'UA-164807139-1');
     </script>
+    
     <header>
         @include('includes.navbar')
     </header>
