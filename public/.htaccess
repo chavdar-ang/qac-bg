@@ -5,6 +5,11 @@
 
     RewriteEngine On
 
+    # Redirects
+    RewriteCond %{HTTPS} off [OR]
+	RewriteCond %{HTTP_HOST} ^www\.qac-bg\.com [NC]
+	RewriteRule (.*) https://qac-bg.com/$1 [L,R=301]
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
