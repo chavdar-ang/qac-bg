@@ -32,8 +32,7 @@
             <p>Над 23 години помагаме на бизнеса като му осигуряваме достъп до европейския пазар.</p>
             <br />
             <a class="submit" href="{{ route('contacts.show') }}"> запитване</a>
-        </div>
-        <div class="cert c2 ">
+        </div><div class="cert c2 ">
             <img src="/images/cert.jpg" alt="">
         </div>
     </div>
