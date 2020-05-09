@@ -17,7 +17,8 @@ h1.suggestions-title::after,
 // main-title //
 
 .slider {
-	background-image: url(/images/meeting.jpg),linear-gradient(180deg,rgba(0,0,0,.5) 0,rgba(0,0,0,.6) 60%,rgba(0,0,0,.75));
+	background-image: url(/images/home.jpg),linear-gradient(180deg,rgba(0,0,0,.5) 0,rgba(0,0,0,.3) 40%,
+    rgba(0,0,0,.75));
 	background-blend-mode: overlay;
 	background-size: cover;
 	min-height: 550px;
@@ -74,35 +75,28 @@ h1.suggestions-title::after,
 
 
 // services //
-.services-title {
-    text-align: center;
-    position: relative;
-    margin: 30px 0;
-}
-
+.services-title { text-align: center;}
 
 .services { 
     background-color: #EEE;
     padding:80px 0 40px 0;
 }
 
-.services .index-icon h2 { 
-    padding-bottom: 30px;
-    text-align: center;
-
+.services .flex .part {
+    display: flex;
+    flex-direction: column;
 }
 
-
-.services section.grid .index-icon {
-    margin:0 20px 10px;
-    border-bottom: 2px solid#FFF;
-    background-color:#FFF;
-    box-shadow: 0 2px 8px 0    rgba(0,0,0,0.32);
-    padding:0 20px 30px 20px;
+.services .flex .part {
+    border-bottom: 2px solid #FFF;
+    background-color: #FFF;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.32);
     text-align: center;
+    position: relative;
+    margin: 20px 0;
 }
 
-.services section.grid .index-icon .icon {
+.services .part .icon {
     border-radius: 50px;
     border: 1px solid #EEE;
     padding: 15px;
@@ -112,40 +106,35 @@ h1.suggestions-title::after,
     height: 70px;
 }
 
-.services section.grid {
-    display: grid;
-
-}
-.services section.grid {
-    grid-template-columns: repeat(2,1fr);
+.info {
+    padding: 0 15px;
+    margin-bottom: auto;
 }
 
-@media all and (max-width:1080px) {
-    .services { padding:80px 20px 40px 20px; }
+.services .button {
+    margin-top: auto;
+    padding-bottom: 20px;
+}
+@media all and (min-width: 320px) and (max-width: 700px) {
+	.services .flex .part { width: 100%; margin: 10px; }
 }
 
-@media all and ( min-width: 981px) {
-    .services section.grid .index-icon.ce { margin:0 20px 0 0; }
-    .services section.grid .index-icon.iso { margin:0 0 0 20px; }
-}
-
-@media all and (max-width: 980px) {
-    .services section.grid { grid-template-columns: 1fr;}
-    .services { padding:90px 20px 40px 20px;}
-
-    .services section.grid .index-icon { 
-        padding:0 10px 30px 10px; 
-        margin:0 10px 10px;
+@media all and (min-width: 701px) and (max-width: 766px) {
+    .services .flex .part {
+        width: calc(50% - 20px);
+        margin: 10px;
     }
-
-    .services section.grid .index-icon.ce { margin-bottom: 80px;}
 }
 
-@media all and (max-width: 640px) {
-
-    .services {padding:90px 10px 40px 10px;}
+@media all and (min-width:767px) {
+    .services .flex .part {
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
 }
 // services-end // 
+
+
 
 // suggestion //
 
@@ -157,7 +146,7 @@ h1.suggestions-title::after,
 
 
 .fixed {
-    background-image: url("/images/inspection.jpeg");
+    background-image: url("/images/suggestion.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -167,7 +156,7 @@ h1.suggestions-title::after,
 }
 
 .fixed::before {
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.2);
     position: absolute;
     content: "";
     display: block;
@@ -177,20 +166,13 @@ h1.suggestions-title::after,
     right: 0;
 }
 
-.container-fixed {
-    max-width: 720px;
-    position: relative;
-    z-index: 2;
-    display: table;
-    min-height: 100%;
-    height: 100%;
-}
+
 
 .fixed div.bg-gray,
 .fixed div.bg-lightorange {
     padding: 20px;
     text-align: center;
-    margin: 30px;
+    // margin: 30px;
     opacity: 0.8;
     color: #fff;
 }
@@ -214,23 +196,6 @@ h1.suggestions-title::after,
 
 // suggestion-end //
 
-// US //
-.us {
-    max-width: 720px;
-    text-align: center;
-    padding:20px 40px 40px;
-    font-size: 17px;
-}
-.us h3 {
-    font-weight: 400;
-    font-size: var(--h3-font-size);
-}
-
-@media all and ( max-width:480px) {
-    .us {padding: 20px;}
-}
-
-// US-end //
 
 // QAC-CE-MARK //
     

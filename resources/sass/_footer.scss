@@ -7,7 +7,7 @@ section.footer {
 }
 
 footer {
-    background-image: url(/images/cube.jpg);
+    background-image: url(/images/ft-pre.jpg);
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
@@ -34,18 +34,18 @@ footer svg { vertical-align: middle;}
 footer .info ul li a { color: #fff;}
 footer .info ul{ padding: 0;}
 
-.call {
+footer .call {
     background-image: url(/svg/phone.svg);
 }
 
-.location {
+footer .location {
     background-image: url(/svg/pin.svg);
 }
 
-.mail {
+footer .mail {
     background-image: url(/svg/envelope.svg);
 }
-.icon {
+footer .icon {
     background-position: center 10px;
     background-size: 40px 40px;
     padding-top: 60px;
@@ -53,16 +53,16 @@ footer .info ul{ padding: 0;}
     line-height: 30px;
 }
 
-.call a { 
+footer .call a { 
     margin: 14px 0;
 }
 
-.copyright { 
+footer .copyright { 
     font-size: 14px;
     text-align: center;
 } 
 
-.hr-line {
+footer .hr-line {
     width: 100px;
     height: 2px;
     background-color:   #db0546;
