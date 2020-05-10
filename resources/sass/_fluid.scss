@@ -18,6 +18,7 @@ section {
 .p4 { padding: 40px;  }
 .p04 { padding: 0 40px;  }
 .p15 { padding: 15px 10px; }
+.p024 { padding: 0 40px 20px 20px;}
 
 .m1 { margin: 10px; } 
 .m10 { margin: 10px 0; }
@@ -120,6 +121,7 @@ section {
     .w35 { width: 70%;}
     .w15 { width: 30%; }
     .p2 { padding: 10px; }
+    .p024 { padding: 10px;}
 }
 
 @media all and (min-width: 940px) {

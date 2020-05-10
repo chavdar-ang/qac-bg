@@ -64,3 +64,12 @@ section.form { padding: 40px 0;}
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
+@media all and (max-width: 980px) {
+    .bg-contacts h1 {
+        font-size: 40px;
+        padding: 60px;
+    }
+
+    section.form { padding:0 0 20px 0;}
+}

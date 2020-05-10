@@ -28,7 +28,7 @@
 .content h3::before { margin-bottom: 15px; }
 
 .content {
-    padding: 10px;
+    padding:40px 10px;
 }
 
 .content .value h3:before {
@@ -42,7 +42,9 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-// .content {
-//     max-width: 750px;
-//     margin: 10px auto;
-// }
+@media all and (max-width: 980px) {
+    .about h1 {
+        font-size: 40px;
+        padding: 60px;
+    }
+}

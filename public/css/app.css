@@ -190,6 +190,10 @@ section {
   padding: 15px 10px;
 }
 
+.p024 {
+  padding: 0 40px 20px 20px;
+}
+
 .m1 {
   margin: 10px;
 }
@@ -391,6 +395,10 @@ section {
   }
 
   .p2 {
+    padding: 10px;
+  }
+
+  .p024 {
     padding: 10px;
   }
 }
@@ -1266,6 +1274,17 @@ section.form {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+@media all and (max-width: 980px) {
+  .bg-contacts h1 {
+    font-size: 40px;
+    padding: 60px;
+  }
+
+  section.form {
+    padding: 0 0 20px 0;
+  }
+}
+
 .about {
   padding: 20px;
   text-align: center;
@@ -1297,7 +1316,7 @@ section.form {
 }
 
 .content {
-  padding: 10px;
+  padding: 40px 10px;
 }
 
 .content .value h3:before {
@@ -1309,6 +1328,13 @@ section.form {
   font-weight: bold;
   font-size: 35px;
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@media all and (max-width: 980px) {
+  .about h1 {
+    font-size: 40px;
+    padding: 60px;
+  }
 }
 
 html {
@@ -1396,6 +1422,17 @@ h2 {
   --h1-font-size: 40px;
   --h1-text-transform: uppercase;
   --h3-text-transform: uppercase;
+}
+
+@media all and (max-width: 980px) {
+  :root {
+    --h4-font-size: 15px;
+    --h3-font-size: 30px;
+    --h2-font-size: 25px;
+    --h1-font-size: 30px;
+    --h1-text-transform: uppercase;
+    --h3-text-transform: uppercase;
+  }
 }
 
 section a.logo img {
