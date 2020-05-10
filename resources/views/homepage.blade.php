@@ -58,7 +58,7 @@
                 <a class="submit" href="{{ route('contacts.show') }}">Запитване » </a>
             </div>
         </div>
-        <div class="part">
+        <div class="part mrg">
             <div class="info ce">
                 <a href="#">
                 <img class="icon" src="/svg/iso.svg" alt="">
@@ -88,8 +88,7 @@
                 <li>» Предоставяме Ви точна и безпристрастна информация, съобразена с действащото законодателство </li><br />
                 <li>» Ние предлагаме прагматичен и икономически ефективен подход за постигане на CE маркировка и помощ за спазване на изискванията за продуктите </li>
             </ul>
-            <br />
-            <br />
+
             <!-- <a class="submit" href="{{ route('contacts.show') }}">Изпратете запитване</a> &nbsp; -->
             <!-- <a class="submit-border" href="{{ route('contacts.show') }}">Научeте повече</a> -->
         </div>

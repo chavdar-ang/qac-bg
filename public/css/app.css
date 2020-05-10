@@ -693,6 +693,12 @@ h1.suggestions-title::after,
   align-items: center;
 }
 
+@media all and (max-width: 980px) {
+  .slider {
+    padding: 0;
+  }
+}
+
 .width-center {
   margin: 0 auto;
   max-width: 1280px;
@@ -713,13 +719,18 @@ h1.suggestions-title::after,
   text-align: center;
 }
 
+.text h1 {
+  font-size: var(--h1-font-size);
+  margin: 16px 0;
+}
+
 @media all and (min-width: 981px) {
   .text {
     margin-top: 100px;
   }
 }
 
-@media all and (max-width: 1080px) {
+@media all and (max-width: 1300px) {
   .text,
   .cert {
     padding: 20px;
@@ -729,17 +740,29 @@ h1.suggestions-title::after,
 @media all and (max-width: 980px) {
   .text {
     margin-top: 0;
-    padding: 20px;
+    padding: 40px;
+  }
+
+  .text h1 {
+    margin: 0;
   }
 
   .width-center .cert {
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
   }
 }
 
-.text h1 {
-  font-size: var(--h1-font-size);
-  margin: 16px 0;
+@media all and (max-width: 940px) {
+  .text {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .width-center .cert,
+  .text {
+    padding: 20px 10px;
+  }
 }
 
 .services-title {
@@ -789,6 +812,10 @@ h1.suggestions-title::after,
   .services .flex .part {
     width: 100%;
     margin: 10px;
+  }
+
+  .services .part.mrg {
+    margin-top: 75px;
   }
 }
 
@@ -1102,7 +1129,7 @@ section.footer {
 }
 
 footer {
-  background-image: url(/images/ft-pre.jpg);
+  background-image: url(/images/footer.jpg);
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
