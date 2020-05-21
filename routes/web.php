@@ -25,6 +25,8 @@ Route::get('contacts', 'ContactPageController@show')->name('contacts.show');
 
 Route::get('about', 'AboutPageController@show')->name('about.show');
 
+Route::get('ce-mark', 'CeMarkPageController@show')->name('ce-mark.show');
+
 Route::get('blog', 'PostController@index')->name('posts.index');
 Route::get('blog/{slug}', 'PostController@show')->name('posts.show');
 Route::get('blog/topic/{slug}', 'TopicController@show')->name('topics.show');
