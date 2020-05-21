@@ -46,7 +46,7 @@
     <section class="flex">
         <div class="part">
             <div class="info ce">
-                <a href="#">
+                <a href="{{ route('ce-mark.show') }}">
                     <img class="icon" src="/svg/CE.svg" alt="">
                     <h2> CE маркировка </h2>
                     <p>Ние ви помагаме да постигнете съответствие с приложимите европейски директиви и регламенти за продуктова безопасност.</p><br />

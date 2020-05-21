@@ -11,6 +11,7 @@
 @import "_footer";
 @import "contacts";
 @import "about";
+@import "ce-mark";
 
 html {
     height: 100%; 
@@ -70,6 +71,12 @@ a {
 
 h1,h2,h3,h4 {
     font-weight: 600;
+}
+
+ul { 
+    padding-left: 25px;
+    margin: 0;
+    padding: 0;
 }
 
 ul li { list-style: none;}

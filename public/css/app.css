@@ -928,10 +928,6 @@ h1.suggestions-title::after,
   text-transform: var(--h1-text-transform);
 }
 
-ul {
-  padding-left: 25px;
-}
-
 @media all and (max-width: 1080px) {
   .qas-gradient {
     padding: 50px 20px;
@@ -1337,6 +1333,62 @@ section.form {
   }
 }
 
+.bg-CE {
+  background-image: url(/images/CE-mark.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.75));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-CE h1 {
+  color: #fff;
+  text-align: center;
+  padding: 120px;
+  margin: 0;
+  font-size: 60px;
+}
+
+h1.CE-title {
+  margin: 45px 0;
+  text-align: center;
+}
+
+h1.CE-title::after {
+  content: " ";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: #db0546;
+  border: none;
+  margin: 15px auto 25px auto;
+}
+
+.CE-cheks {
+  background-color: #146aa7;
+}
+
+@media all and (max-width: 980px) {
+  .bg-CE h1 {
+    font-size: 40px;
+    padding: 60px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .CE-mark {
+    padding: 0 10px 20px 10px;
+  }
+
+  .bg-CE h1 {
+    padding: 40px;
+  }
+
+  h1.CE-title {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
 html {
   height: 100%;
   margin: 0;
@@ -1401,6 +1453,12 @@ h2,
 h3,
 h4 {
   font-weight: 600;
+}
+
+ul {
+  padding-left: 25px;
+  margin: 0;
+  padding: 0;
 }
 
 ul li {
