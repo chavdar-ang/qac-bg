@@ -36,27 +36,52 @@ h1.CE-title::after {
 
 .CE-mark section { position: relative;}
 
+
 .CE-process h3 { 
     text-align: center;
     font-size: 25px;
-    margin: 50px;
 }
 
+.process-grid .process-info {
+    padding: 15px;
+    position: relative;
+}
+
+.process-grid .process-info span::after {
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    width: 50px;
+    margin-left: 0.2em;
+    border-bottom: 1px solid #ccc;
+ }
 
 @media all and (max-width: 980px) {
     .bg-CE h1 {
         font-size: 40px;
         padding: 60px;
     }
+
+    .CE-process { padding: 10px;}
+
+    .CE-process h3 {
+        margin: 50px auto;
+    }
+
+    .CE-mark .title .in {
+        margin: 0 10px -20px 10px;
+        z-index: 1;
+        position: relative;
+    }
 }
 
 @media all and (max-width: 480px) {
-    .CE-mark { padding:0 10px 20px 10px;}
-    .bg-CE h1  { padding: 40px;}
+    .bg-CE h1  { padding: 40px 10px;}
 
     h1.CE-title { 
         font-size: 25px;
         line-height: 35px;
+        padding:40px 10px 20px 10px;
     }
 }
 
@@ -65,45 +90,53 @@ h1.CE-title::after {
 }
 
 
-.process-flex span {
+.process-grid span {
     font-size: 45px;
     color:#db0546;
 }
 
-
-@media all and ( max-width:681px){
-
-}
-
 @media all and ( min-width:680px) and ( max-width:980px){
-    .process-flex .process-info {
-        flex: 0 0 45%;
-        max-width: 45%;
-        padding: 15px;
+    .process-grid {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr ;
     }
 }
 
 @media all and ( min-width:981px) {
     .width2 {
         width: 50%;
-        
     }
 
-    .process-flex .process-info {
-        flex: 0 0 25%;
-        max-width: 20%;
-        padding: 15px;
+    h1.CE-title {
+        width: 70%;
+        margin: 0 auto;
+        box-sizing: border-box;
     }
 
+    .CE-process h3 { margin: 50px;}
+
+    .CE-mark .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
+    .CE-mark .title .in {
+        margin-right: -66px;
+        z-index: 1;
+    }
+
+    .process-grid {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+        
 }
 
 @media all and ( min-width:680px) {
-    .process-flex {
-        display: flex;
-        flex-wrap: wrap; 
-        justify-content: center;
-    }
+    
 }
 
 

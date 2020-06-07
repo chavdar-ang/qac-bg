@@ -12,5 +12,5 @@
         <a href="mailto:office@qac-bg.com">email: <span itemprop="email">office@qac-bg.com</span></a><br/>
         <a href="mailto:consult@qac-bg.com">email: <span itemprop="email">consult@qac-bg.com</span></a>
     </div><div class="c4 "><img src="/images/vizualizacia.png" alt=""></div>
-    <div class="copyright c3">Copyright © 2020 Кю Ей Си ООД </div> 
+    <div class="copyright c3">Copyright © 2008 - 2020 Кю Ей Си ООД </div> 
 </section>
