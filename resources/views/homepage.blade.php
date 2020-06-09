@@ -55,7 +55,7 @@
             <div class="button c">
                 <p><b>Вземете Вашата декларация за съответствие сега</b></p>
                 <br/>
-                <a class="submit" href="{{ route('contacts.show') }}">Запитване » </a>
+                <a class="submit" href="{{ route('ce-mark.show') }}">Виж повече » </a>
             </div>
         </div>
         <div class="part mrg">
