@@ -3,7 +3,8 @@ h1 { font-size:  var(--h1-font-size); }
 h1.services-title::after,
 h1.suggestions-title::after,
 .us h1::after,
-.partners h1::after {
+.partners h1::after,
+.banner-visualization h1::after {
     content: ' ';
     display: block;
     width: 100px;
@@ -135,6 +136,7 @@ h1.suggestions-title::after,
 @media all and (min-width: 320px) and (max-width: 700px) {
     .services .flex .part { width: 100%; margin: 10px; }
     .services .part.mrg { margin-top: 75px;}
+    .services .button b { padding: 0 5px;}
 }
 
 @media all and (min-width: 701px) and (max-width: 766px) {
@@ -293,3 +295,16 @@ h1.suggestions-title::after,
 }
 
 // partners //
+
+// banners //
+
+.banner-visualization {
+    background-color: #EEE;
+}
+
+.banner-visualization h1 { padding-top: 40px;}
+
+@media all and ( max-width: 599px) {
+    .banner-visualization { padding-bottom:  40px;}
+}
+// banners //

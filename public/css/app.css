@@ -692,7 +692,8 @@ h1 {
 h1.services-title::after,
 h1.suggestions-title::after,
 .us h1::after,
-.partners h1::after {
+.partners h1::after,
+.banner-visualization h1::after {
   content: " ";
   display: block;
   width: 100px;
@@ -836,6 +837,10 @@ h1.suggestions-title::after,
 
   .services .part.mrg {
     margin-top: 75px;
+  }
+
+  .services .button b {
+    padding: 0 5px;
   }
 }
 
@@ -987,6 +992,20 @@ h1.suggestions-title::after,
 @media all and (max-width: 980px) {
   .partners {
     padding: 40px 20px;
+  }
+}
+
+.banner-visualization {
+  background-color: #EEE;
+}
+
+.banner-visualization h1 {
+  padding-top: 40px;
+}
+
+@media all and (max-width: 599px) {
+  .banner-visualization {
+    padding-bottom: 40px;
   }
 }
 

@@ -151,4 +151,16 @@
 </div>
 <!-- PARTNERS-END -->
 
+
+<!-- BANNERS -->
+
+    
+<div class="banner-visualization c">
+    <h1>Проектите по който работим</h1>
+    <div class="c2 p4">
+        <img src="/images/vizualizacia.png" alt="">
+    </div><div class="c2 p4"><img src="/images/vizualizacia2.png" alt=""></div>
+</div>
+<!-- BANNERS - END -->
+
 @endsection
