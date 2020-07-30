@@ -319,6 +319,10 @@ section {
   .c-3 {
     width: 100%;
   }
+
+  .c5 {
+    width: 100%;
+  }
 }
 
 @media all and (min-width: 600px) and (max-width: 799px) {
@@ -383,6 +387,10 @@ section {
   .flex .c43.m1 {
     width: calc(33.333333333% - 20px);
   }
+
+  .c5 {
+    width: 33.333333%;
+  }
 }
 
 @media all and (max-width: 940px) {
@@ -418,6 +426,10 @@ section {
 
   .c43 {
     width: 25%;
+  }
+
+  .c5 {
+    width: 20%;
   }
 
   .flex .c43.m1 {
@@ -1136,6 +1148,7 @@ footer {
   background-image: url(/images/footer.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
   box-shadow: 0px -3px 10px -2px rgba(0, 0, 0, 0.75);
 }

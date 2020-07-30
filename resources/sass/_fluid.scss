@@ -87,6 +87,7 @@ section {
 
 @media all and (max-width: 799px) {
     .c3 , .c-3 { width: 100%; }
+    .c5 { width: 100%; }
 }
 
 @media all and (min-width: 600px) and (max-width: 799px) {
@@ -115,6 +116,7 @@ section {
     .c43, .c3 { width: 33.333333333%; }
     .c32 { width: 50%; }
     .flex .c43.m1 { width: calc(33.333333333% - 20px); }
+    .c5 { width: 33.333333%; }
 }
 
 @media all and (max-width: 940px) {
@@ -129,6 +131,7 @@ section {
     .c-3 { width: 66.6667%; }
     .c32 { width: 33.333333333%; }
     .c43 { width: 25%; }
+    .c5 { width: 20%; }
     .flex .c43.m1 { width: calc(25% - 20px); }
 
     .w35 { width: 35%; }
