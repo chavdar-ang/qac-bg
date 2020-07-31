@@ -156,7 +156,7 @@
 
     
 <div class="banner-visualization c">
-    <h1>Проектите по който работим</h1>
+    <h1>Проектите по които работим</h1>
     <div class="c2 p4">
         <img src="/images/vizualizacia.png" alt="">
     </div><div class="c2 p4"><img src="/images/vizualizacia2.png" alt=""></div>
