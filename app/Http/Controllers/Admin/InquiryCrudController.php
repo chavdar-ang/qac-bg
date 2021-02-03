@@ -30,6 +30,11 @@ class InquiryCrudController extends CrudController
     {
         // TODO: remove setFromDb() and manually define Columns, maybe Filters
         $this->crud->setFromDb();
+        $this->crud->addColumn([
+            'name' => 'created_at',
+            'type' => 'date',
+            'label' => 'Created at',
+        ]);
     }
 
     protected function setupCreateOperation()
